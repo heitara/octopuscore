@@ -71,10 +71,10 @@ public final class OKCache <AssetKeyType: Hashable, AssetType> {
     
     /// MARK: - Debugging
     
-    public func printAssets() {
-        OKLog.resources.debug("\(📜("assets.count = \(assets.count)"))")
-        for key in assets.keys {
-            OKLog.resources.debug("\(📜("key = \(key), asset = \(assets[key])"))")
+    public func printAssets() { 
+        OKLog.resources.debug("\(📜("assets.count = \(self.assets.count)"))")
+        for key in self.assets.keys {
+            OKLog.resources.debug("\(📜("key = \(key), asset = \(self.assets[key])"))")
         }
     }
     
